@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>UNIT-2 Evaluare</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slideShowStyle.css">
+</head>
+
+<body>
+    <h1>Tokos Áron</h1>
+    <div class="email">
+        <p>tokos.le.aron.@utcluj.ditatec.ro</p>
+    </div>
+    <div class="main">
+        <p>
+        <h2>Structura retelei personale si accesul la internet</h2>
+        </p>
+        <img src="network_diagram.JPG">
+
+        <p>
+        <h2>Caracterisiticile conexiunii la retea</h2>
+        </p>
+        <ul>
+            <li>Adresa MAC: 08-71-90-A4-1B-95</li>
+            <li>Adresa IP: 192.168.1.102</li>
+            <li>Debit la download: 85.59 Mbps</li>
+            <li>Debit la upload: 59.25 Mbps</li>
+        </ul>
+    </div>
+    <p>
+    <h2>Specificatii tehnice ale statiei principale de lucru</h2>
+    </p>
+    <table>
+        <tr>
+            <th>Denumire componenta</th>
+            <th>Producător</th>
+            <th>Parametri</th>
+        </tr>
+        <tr>
+            <td>Procesor</td>
+            <td>Intel</td>
+            <td> Intel® Core™ i5-10210U</td>
+        </tr>
+        <tr>
+            <td>RAM</td>
+            <td>Samsung</td>
+            <td>8gb DDR4, 2666 MHz</td>
+        </tr>
+        <tr>
+            <td>Stocare SSD</td>
+            <td>Samsung</td>
+            <td>512 Gb SSD, PCIe</td>
+        </tr>
+    </table>
+
+    <p>
+        <h2 ondblclick="showSlides(); schimb()">Utilizarea resurselor (slideshow)</h2> <!--pe dublu click slideshow //-->
+        </p>
+    <div id="resurse">
+        <div class="row">
+            <div class="colum">
+                <img src="cpu.JPG">
+            </div>
+            <div class="column">
+                <img src="ram.JPG">
+            </div>
+            <div class="column">
+                <img src="diskCapture.JPG">
+            </div>
+        </div>
+    </div>
+
+    <div id="slidesh" , style="text-align: center;">
+        <div class="mySlides fade">
+            <img src="cpu.JPG">
+
+        </div>
+
+        <div class="mySlides fade">
+            <img src="ram.JPG">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="diskCapture.JPG">
+        </div>
+    </div>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <script src="slideShow.js"></script>
+
+</body>
+</html>
